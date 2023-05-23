@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <h1>Calcular IMC</h1>
+        <p>Para um cálculo preciso, necessitamos de algumas informações básicas sobre você</p>
+    </header>
+    
+   <main>
+    <div class="input">
+        <h2 class="numero">1</h2>
+        <h2>Altura</h2>
+        <div id="img-altura">
+            <img src="img/grupo-de-idade.png" alt="">
+        </div>
+        <input type="number" id="altura" placeholder="1,70">
+    </div>
+
+    <div class="input">
+        <h2 class="numero">2</h2>
+        <h2>Peso</h2>
+        <div id="img-peso">
+            <img src="img/escala-de-peso.png" alt="">
+        </div>
+        <input type="number" id="peso" placeholder="KG">
+    </div>
+
+    <button onclick="calcular()">Calcular</button>
+   </main>
+
+   <dialog>
+        <button id="fechar" onclick="fecharmodal()">X</button>
+        <h2 id="resultado"></h2>
+        <p id="conteudo"></p>
+
+        <div id="img-modal"></div>
+   </dialog>
+
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #20202081;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #202020;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+}
+
+header h1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 2.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img {
+    width: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid #2020207a;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 300ms ease all;
+    
+}
+
+.input h2{
+    font-family: 'Secular One', sans-serif;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.numero{
+    position: relative;
+    top: -20px;
+    left: calc(200px - 30px);
+    font-family: 'Secular One', sans-serif ;
+    background-color: #202020;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    align-items: center;
+
+}
+
+input{
+    font-family: 'Secular One', sans-serif ;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    font-size: 1.8em;
+    padding: 10px;
+    background-color: azure;
+    border: none;
+    border-radius: 8px;
+    transition: 300ms ease all;
+}
+
+input:focus{
+    border: 1px solid #202020;
+}
+
+main button{
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    width: 400px;
+    height: 45px;
+    margin: 10px auto;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-family: 'Secular One', sans-serif ;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 300ms ease all;
+}
+
+
+main button:hover{
+    background: #202020;
+    transform: scale(1.1);
+}
+main button:active{
+    transform: scale(0.8);
+}
+
+dialog{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 380px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+
+}
+
+#fechar{
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #202020;
+    position: absolute;
+    left: 87%;
+    top: 12px;
+    width: 40px;
+    height: 25px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultado{
+    font-family:'Secular One', sans-serif ;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#conteudo{
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+#img-modal img {
+    width: 100px;
+}
+
+#img-modal{
+    margin-top: 20px;
+}
+
