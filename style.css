@@ -138,7 +138,7 @@ dialog{
     transform: translate(-50%, -50%);
     width: 450px;
     height: 380px;
-    max-width: 90%;
+    max-width: 80%;
     padding: 1.2rem;
     border-radius: 0.5rem;
     text-align: center;
@@ -179,3 +179,42 @@ dialog{
     margin-top: 20px;
 }
 
+@media screen and (max-width: 930px){
+    header{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    main{
+        height: 100vh;
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .numero{
+        display: none;
+    }
+
+    main section{
+        flex-direction: column;
+    }
+
+    #calcButton{
+        width: 60%;
+    }
+
+    dialog{
+        height: 40%;
+        font-size: 0.9em;
+    }
+    #fechar{
+        float: right;
+        position: static;
+        width: 25px;
+    }
+}
