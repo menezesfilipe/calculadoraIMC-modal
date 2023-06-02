@@ -40,7 +40,9 @@ img {
 main{
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
 }
 
 main section{
@@ -66,6 +68,12 @@ main section{
     padding: 10px;
     transition: 300ms ease all;
     
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .input h2{
@@ -186,6 +194,7 @@ dialog{
     }
     main{
         height: 100vh;
+        
     }
 
     .input{
