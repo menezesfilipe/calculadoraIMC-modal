@@ -10,21 +10,25 @@
 
 body{
     font-family: 'Nunito', sans-serif;
+    background: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 
 header{
     text-align: center;
     padding: 15px;
-    border-bottom: 1px solid #20202081;
+    border-bottom: 1px solid #202020ec;
     margin-bottom: 10px;
     color: white;
-    background-color: #202020;
+    background-color: #202020ad;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
 }
 
 header h1{
     font-family: 'Secular One', sans-serif;
-    font-size: 2.7em;
+    font-size: 2.5em;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -36,14 +40,25 @@ img {
 main{
     display: flex;
     flex-direction: column;
+    height: 50vh;
+}
+
+main section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
     
+
 }
 
 .input{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.76);
     width: 400px;
     height: 200px;
-    margin: 10px auto;
+    margin: 10px;
     text-align: center;
     border: 1px solid #2020207a;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
@@ -90,7 +105,9 @@ input:focus{
     border: 1px solid #202020;
 }
 
-main button{
+#calcButton{
+    display: inline-block;
+    margin: 0 auto;
     background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     width: 400px;
     height: 45px;

@@ -14,26 +14,32 @@
     </header>
     
    <main>
-    <div class="input">
-        <h2 class="numero">1</h2>
-        <h2>Altura</h2>
-        <div id="img-altura">
-            <img src="img/grupo-de-idade.png" alt="">
+    <section>
+        <div class="input">
+            <h2 class="numero">1</h2>
+            <h2>Altura</h2>
+            <div id="img-altura">
+                <img src="img/grupo-de-idade.png" alt="">
+            </div>
+            <input type="number" id="altura" placeholder="1,70">
         </div>
-        <input type="number" id="altura" placeholder="1,70">
-    </div>
-
-    <div class="input">
-        <h2 class="numero">2</h2>
-        <h2>Peso</h2>
-        <div id="img-peso">
-            <img src="img/escala-de-peso.png" alt="">
+    
+        <div class="input">
+            <h2 class="numero">2</h2>
+            <h2>Peso</h2>
+            <div id="img-peso">
+                <img src="img/escala-de-peso.png" alt="">
+            </div>
+            <input type="number" id="peso" placeholder="KG">
         </div>
-        <input type="number" id="peso" placeholder="KG">
-    </div>
+    </section>
+    
+    <button id="calcButton" onclick="calcular()">Calcular</button>
 
-    <button onclick="calcular()">Calcular</button>
+    
    </main>
+
+   
 
    <dialog>
         <button id="fechar" onclick="fecharmodal()">X</button>
